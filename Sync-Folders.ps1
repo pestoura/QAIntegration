@@ -32,10 +32,14 @@ function Sync-Folders {
 
     # Clean up destination
     Get-ChildItem -Path $destination -Recurse | ForEach-Object {
-        if (-not $_.PSIsContainer) {
-            if (-not (Test-Path -Path $_.FullName -PathType Container)) {
+        $sourceEquivalentPath = Join-Path -Path $source -ChildPath $_.FullName.Substring($destination.Length + 1)
+        if (-not (Test-Path -Path $sourceEquivalentPath)) {
+            if ($_.PSIsContainer) {
+                Remove-Item -Path $_.FullName -Recurse -Force
+                Write-Output "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - Removed folder: $($_.FullName)" | Out-File -FilePath $logFile -Append
+            } else {
                 Remove-Item -Path $_.FullName -Force
-                Write-Output "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - Removed item: $($_.FullName)" | Out-File -FilePath $logFile -Append
+                Write-Output "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - Removed file: $($_.FullName)" | Out-File -FilePath $logFile -Append
             }
         }
     }
