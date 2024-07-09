@@ -15,9 +15,12 @@ This PowerShell script automates the synchronization of folders from a source to
 
    ```bash
    git clone https://github.com/pestoura/QAIntegration.git
+
+2. Navigate to the cloned repository directory:
+   ```bash
    cd QAIntegration
 
-2. **Run the Script:**
+3. **Run the Script:**
 
 - Open PowerShell and navigate to the script directory.
 
@@ -26,18 +29,18 @@ This PowerShell script automates the synchronization of folders from a source to
    .\Sync-Folders.ps1 -sourceFolder "C:\Path\To\Source" -replicaFolder "D:\Path\To\Replica" -logFilePath "C:\Path\To\Log\sync_log.txt"
 Replace "C:\Path\To\Source", "D:\Path\To\Replica", and "C:\Path\To\Log\sync_log.txt" with your actual folder paths and log file path.
    
-3. **Parameters:**
+4. **Parameters:**
 
 -sourceFolder: Path to the source folder that will be synchronized.  
 -replicaFolder: Path to the replica folder where synchronization will be performed.  
 -logFilePath: Path to the log file where all operations will be logged.
 
-4. **Example:**
+5. **Example:**
 
 ```bash
 .\Sync-Folders.ps1 -sourceFolder "C:\Projects\SourceFolder" -replicaFolder "D:\Backup\ReplicaFolder" -logFilePath "C:\Logs\sync_log.txt"
 ```
-5. **Error Handling:**
+6. **Error Handling:**
 
 If the source folder doesn't exist or is inaccessible, an error will be displayed.
 Ensure all paths provided are valid and accessible before running the script.
