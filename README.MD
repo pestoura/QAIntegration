@@ -27,8 +27,8 @@ Replace "C:\Path\To\Source", "D:\Path\To\Replica", and "C:\Path\To\Log\sync_log.
    
 3. **Parameters:**
 
--sourceFolder: Path to the source folder that will be synchronized.
--replicaFolder: Path to the replica folder where synchronization will be performed.
+-sourceFolder: Path to the source folder that will be synchronized.  
+-replicaFolder: Path to the replica folder where synchronization will be performed.  
 -logFilePath: Path to the log file where all operations will be logged.
 
 4. **Example:**
