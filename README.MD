@@ -12,6 +12,7 @@ This PowerShell script automates the synchronization of folders from a source to
 ## Usage
 
 1. **Clone the Repository:**
+
    ```bash
    git clone https://github.com/pestoura/QAIntegration.git
    cd QAIntegration
@@ -32,6 +33,7 @@ Replace "C:\Path\To\Source", "D:\Path\To\Replica", and "C:\Path\To\Log\sync_log.
 -logFilePath: Path to the log file where all operations will be logged.
 
 4. **Example:**
+
 ```bash
 .\Sync-Folders.ps1 -sourceFolder "C:\Projects\SourceFolder" -replicaFolder "D:\Backup\ReplicaFolder" -logFilePath "C:\Logs\sync_log.txt"
 ```
