@@ -41,7 +41,9 @@ If the source folder doesn't exist or is inaccessible, an error will be displaye
 Ensure all paths provided are valid and accessible before running the script.
 
 ## Contributing
+
 Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
 
 ## License
-This project is licensed under the MIT License.
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
