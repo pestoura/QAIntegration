@@ -16,7 +16,7 @@ This PowerShell script automates the synchronization of folders from a source to
    ```bash
    git clone https://github.com/pestoura/QAIntegration.git
 
-2. Navigate to the cloned repository directory:
+2. **Navigate to the cloned repository directory:**
    ```bash
    cd QAIntegration
 
