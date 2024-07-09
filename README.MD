@@ -1,4 +1,4 @@
-# PowerShell Folder Synchronization Script
+# QA Integration 
 
 This PowerShell script automates the synchronization of folders from a source to a replica location, ensuring an exact and complete copy of the source folder's contents in the replica folder. It supports logging of file operations for transparency and troubleshooting.
 
