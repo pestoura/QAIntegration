@@ -34,7 +34,7 @@ Replace "C:\Path\To\Source", "D:\Path\To\Replica", and "C:\Path\To\Log\sync_log.
 4. **Example:**
 ```bash
 .\Sync-Folders.ps1 -sourceFolder "C:\Projects\SourceFolder" -replicaFolder "D:\Backup\ReplicaFolder" -logFilePath "C:\Logs\sync_log.txt"
-
+```
 5. **Error Handling:**
 
 If the source folder doesn't exist or is inaccessible, an error will be displayed.
